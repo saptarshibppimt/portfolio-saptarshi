@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Saptarshi Roy - Computer Science Engineering student, Python developer intern at ISRO, and software engineering candidate focused on data systems, web apps, and leadership." />
+    <meta name="keywords" content="Saptarshi Roy, Software Engineer, Python Developer, ISRO Intern, Computer Science, Portfolio, Flask, SQL, Data Analytics" />
+    <meta name="author" content="Saptarshi Roy" />
+    <meta property="og:title" content="Saptarshi Roy | Software Engineering Portfolio" />
+    <meta property="og:description" content="Portfolio of Saptarshi Roy: CSE student, Python developer intern, project builder, chess leader, and future technology leader." />
+    <meta property="og:type" content="website" />
+    <title>Saptarshi Roy | Software Engineering Portfolio</title>
+    <script>
+      window.tailwind = window.tailwind || {};
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+              display: ["Space Grotesk", "Inter", "ui-sans-serif"],
+            },
+            colors: {
+              ink: "#14100b",
+              pearl: "#fff8ea",
+              aurora: "#ffd23f",
+              signal: "#ff8a00",
+              ember: "#ff3b30",
+            },
+            boxShadow: {
+              glow: "0 0 60px rgba(255, 138, 0, .28)",
+              glass: "0 24px 80px rgba(0, 0, 0, .24)",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      .light {
+        color-scheme: light;
+      }
+
+      body {
+        background: #14100b;
+        color: #fff;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .font-display {
+        font-family: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .bg-ink { background-color: #14100b !important; }
+      .bg-pearl { background-color: #fff8ea !important; }
+      .bg-aurora { background-color: #ffd23f !important; }
+      .text-ink { color: #14100b !important; }
+      .text-aurora { color: #ffd23f !important; }
+      .text-signal { color: #ff8a00 !important; }
+      .text-ember { color: #ff3b30 !important; }
+      .shadow-glow { box-shadow: 0 0 60px rgba(255, 138, 0, .28) !important; }
+      .shadow-glass { box-shadow: 0 24px 80px rgba(0, 0, 0, .24) !important; }
+      .from-aurora {
+        --tw-gradient-from: #ffd23f var(--tw-gradient-from-position);
+        --tw-gradient-to: rgba(255, 210, 63, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .via-signal {
+        --tw-gradient-to: rgba(255, 138, 0, 0) var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), #ff8a00 var(--tw-gradient-via-position), var(--tw-gradient-to);
+      }
+      .to-ember { --tw-gradient-to: #ff3b30 var(--tw-gradient-to-position); }
+
+      .light body {
+        color: #14100b;
+      }
+
+      .light .glass {
+        border-color: rgba(20, 16, 11, .12);
+        background:
+          linear-gradient(145deg, rgba(255,255,255,.9), rgba(255,244,213,.78)),
+          linear-gradient(135deg, rgba(255,210,63,.13), rgba(255,59,48,.08));
+        box-shadow: 0 22px 70px rgba(150, 70, 0, .14) !important;
+      }
+
+      .light .text-white,
+      .light .text-white\/86,
+      .light .text-white\/78,
+      .light .text-white\/75,
+      .light .text-white\/74,
+      .light .text-white\/72,
+      .light .text-white\/70,
+      .light .text-white\/68,
+      .light .text-white\/65,
+      .light .text-white\/58,
+      .light .text-white\/48,
+      .light .text-white\/45 {
+        color: #21160c !important;
+      }
+
+      .light .light\:text-ink,
+      .light .light\:text-ink\/80,
+      .light .light\:text-ink\/72,
+      .light .light\:text-ink\/70,
+      .light .light\:text-ink\/68,
+      .light .light\:text-ink\/65,
+      .light .light\:text-ink\/60,
+      .light .light\:text-ink\/58,
+      .light .light\:text-ink\/48,
+      .light .light\:text-ink\/45 {
+        color: #21160c !important;
+      }
+
+      .light .bg-white {
+        background-color: #14100b !important;
+        color: #fff !important;
+      }
+
+      .light .bg-white\/10,
+      .light .bg-white\/8 {
+        background-color: rgba(20, 16, 11, .06) !important;
+      }
+
+      .light .border-white\/20,
+      .light .border-white\/15,
+      .light .border-white\/14,
+      .light .border-white\/12 {
+        border-color: rgba(20, 16, 11, .14) !important;
+      }
+
+      .light .site-backdrop {
+        background:
+          linear-gradient(135deg, rgba(255,210,63,.24), transparent 28%, rgba(255,138,0,.18) 58%, rgba(255,59,48,.14)),
+          radial-gradient(circle at 15% 12%, rgba(255,210,63,.28), transparent 28%),
+          radial-gradient(circle at 82% 18%, rgba(255,59,48,.16), transparent 30%),
+          #fff8ea;
+      }
+
+      .light .site-backdrop-grid {
+        opacity: .16 !important;
+        background-image:
+          linear-gradient(rgba(20,16,11,.42) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(20,16,11,.42) 1px, transparent 1px) !important;
+      }
+
+      .noise::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+        opacity: .07;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+      }
+
+      .glass {
+        border: 1px solid rgba(255, 255, 255, .13);
+        background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+        backdrop-filter: blur(18px);
+      }
+
+      .light .glass {
+        border-color: rgba(8, 17, 31, .12);
+        background: linear-gradient(145deg, rgba(255,255,255,.92), rgba(255,255,255,.62));
+      }
+
+      .skill-meter span {
+        transform-origin: left;
+        animation: grow 1.2s ease forwards;
+      }
+
+      @keyframes grow {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+      }
+
+      .typing-cursor {
+        animation: blink .9s steps(2, start) infinite;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body class="bg-ink text-white antialiased">
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/framer-motion@10.18.0/dist/framer-motion.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
+</html>
